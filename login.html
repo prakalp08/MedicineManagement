@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login_styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tablink" onclick="openTab('Login', this)">Login</button>
+            <button class="tablink" onclick="openTab('Register', this)">Register</button>
+        </div>
+
+        <div id="Login" class="tabcontent">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+        <div id="Register" class="tabcontent">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="newUsername">Username:</label><br>
+                <input type="text" id="newUsername" name="newUsername"><br>
+                <label for="newPassword">Password:</label><br>
+                <input type="password" id="newPassword" name="newPassword"><br>
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"><br><br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+
+    <script src="login_script.js"></script>
+</body>
+</html>
